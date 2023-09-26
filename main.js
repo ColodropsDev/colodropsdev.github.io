@@ -20,11 +20,3 @@ closeToggle.addEventListener("click", () => {
   overlay.classList.remove("show");
   document.body.style.overflow = "auto";
 });
-
-let gojo = document.createElement("p");
-
-let i = 1;
-while (i <= 100) {
-  gojo.innerText = `${i}. Gojo`;
-  document.body.appendChild(gojo);
-}
