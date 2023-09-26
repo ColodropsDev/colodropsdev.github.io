@@ -500,7 +500,7 @@ line-height: 88px; /* 137.5% */
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 .blogs-title h2 {
@@ -691,6 +691,9 @@ footer svg {
     }
 }
 @media (max-width: 1200px) {
+    .blog-cards {
+        gap: 40px;
+    }
     .navbar {
         gap: 30px;
     }
@@ -802,7 +805,7 @@ footer svg {
         display: none;
     }
     .blog-card {
-    width: 300px;
+        width: 350px;
     }
     .blog-cards {
         flex-wrap: wrap;
@@ -832,7 +835,7 @@ footer svg {
         justify-content: center;
     }
 }
-@media (max-width: 847px) {
+@media (max-width: 947px) {
     .blog-card {
         width: 80%;
         max-width: 80%;
@@ -858,6 +861,7 @@ footer svg {
     }
 }
 @media (max-width: 692px) {
+    .blogs-title p, 
     .projects .projects-title h2 {
         width: 100%;
         font-size: 48px;
