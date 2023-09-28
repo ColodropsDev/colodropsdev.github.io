@@ -368,6 +368,7 @@ line-height: 88px; /* 137.5% */
     background-size: cover;
     /* height: 752px; */
     position: relative;
+    background-position: center;
 }
 .big .project-desc {
     height: 20%;
@@ -818,7 +819,17 @@ footer svg {
     .toggle {
         display: block;
     }
-
+    .blogs-title p, .projects-title p {
+        display: none;
+    }
+    .blogs-title, .projects-title {
+        justify-content: center !important;
+    }
+    .blogs-title h2, .project-title h2 {
+        width: 100%;
+        text-align: center;
+        
+    }
 }
 @media (max-width: 966px) {
     .hero-text h1 {
@@ -861,7 +872,7 @@ footer svg {
     }
 }
 @media (max-width: 692px) {
-    .blogs-title p, 
+
     .projects .projects-title h2 {
         width: 100%;
         font-size: 48px;
