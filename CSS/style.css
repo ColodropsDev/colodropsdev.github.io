@@ -586,9 +586,8 @@ footer a:hover {
 .footer-desc-text > p {
     margin: 22px 0;
 }
-.footer-desc-ellipse {
-    display: flex;
-    gap: 12px;
+.footer-desc-ellipse span {
+    margin: 0 2px;
 }
 .footer-contact {
     min-width: 195px;
@@ -756,10 +755,6 @@ footer svg {
     .mission h2 {
         width: 80%;
     }
-    .footer-desc-ellipse {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 @media (max-width: 1055px) {
     .hero-img {
@@ -813,6 +808,16 @@ footer svg {
     }
 }
 @media (max-width: 992px) {
+    .footer-links {
+        display: none;
+    }
+    .project-item-sm {
+        width: 100%;
+    }
+    .project-item-sm .project-desc {
+        width: 80%;
+        height: 20%;
+    }
     .navbar:not(.mobile-navbar), .contact:not(.mobile-contact) {
         display: none;
     }
