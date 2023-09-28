@@ -808,11 +808,20 @@ footer svg {
     }
 }
 @media (max-width: 992px) {
+    footer {
+        justify-content: flex-start;
+        padding-left: 44px;
+    }
     .footer-links {
         display: none;
     }
+    .project-item-sm, .project-item.big {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .project-item-sm {
-        width: 100%;
+        height: 350px;
     }
     .project-item-sm .project-desc {
         width: 80%;
