@@ -826,12 +826,13 @@ footer svg {
     }
     .hero {
         justify-content: center;
-        height: 450px;
+        height: 420px;
         padding: 0 var(--padding-side);
     }
     .hero-text {
         max-width: 100% !important;
         text-align: center;
+        margin-top: 0;
     }
     .hero-text h1 {
         font-size: var(--heading-big-font);
@@ -975,12 +976,25 @@ footer svg {
         padding-right: 50px;
     }
 }
+@media (max-width: 640px) {
+    .value-text h2 {
+        line-height: unset;
+        margin-bottom: 20px;
+    }
+    .value-text p {
+        font-size: 18px;
+    }
+}
 @media (max-width: 551px) {
     .hero-text h1 {
         font-size: 38px;
     }
     .hero-text > p {
         line-height: 135%;
+    }
+    .projects-title h2 {
+        line-height: unset;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 594px) {
