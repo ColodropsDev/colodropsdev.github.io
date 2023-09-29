@@ -47,10 +47,14 @@ ul {
 
 header {
     background-color: var(--secondary);
-    padding: 44px var(--padding-side);
+    padding: 0px var(--padding-side);
     margin-bottom: 0;
 }
-
+.logo svg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 /* .nav-container {
     position: relative;
 }
@@ -501,7 +505,7 @@ line-height: 88px; /* 137.5% */
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .blogs-title h2 {
@@ -514,6 +518,7 @@ line-height: 88px; /* 137.5% */
 }
 .blog-card {
     max-width: 400px;
+    width: 20%;
     padding: 16px;
     background-color: white;
     border-radius: 24px;
@@ -636,12 +641,62 @@ footer a:hover {
     border-color: var(--primary);
     transition: all .45s ease;
 }
+.value {
+    margin-bottom: 80px;
+}
+.mission {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.projects {
+    margin-top: 0;
+    padding-top: 80px;
+}
+.blogs {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 footer svg {
     color: #1C3A27;
+}
+@media (max-width: 1485px) {
+    :root {
+        --heading-big-font: 56px
+    }
 }
 @media (max-width: 1444px) {
     .value-text h2 {
         font-size: 60px;
+    }
+}
+@media (max-width: 1436px) {
+    footer > * {
+        width: 40% !important;
+        text-align: start !important;
+        max-width: 45% !important;
+    }
+    footer {
+        justify-content: space-between;
+        gap: 200px;
+        padding-left: var(--padding-side);
+        padding-right:var(--padding-side);
+    }
+}
+@media (max-width: 1400px) {
+    .blog-card {
+        width: 45%;
+    }
+    .blog-cards {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 1364px) {
+    :root {
+        --heading-big-font: 48px
+    }
+    .cta-banner {
+        padding: 104px;
     }
 }
 @media (max-width: 1300px) {
@@ -660,21 +715,8 @@ footer svg {
         gap: 16px;
     }
     .project-item-sm {
-        width: 60%;
-        height: 300px;
-    }
-}
-@media (max-width: 1485px) {
-    :root {
-        --heading-big-font: 56px
-    }
-}
-@media (max-width: 1364px) {
-    :root {
-        --heading-big-font: 48px
-    }
-    .cta-banner {
-        padding: 104px;
+        width: 100%;
+        height: 500px
     }
 }
 @media (max-width: 1272px) {
@@ -688,6 +730,16 @@ footer svg {
 @media (max-width: 1235px) {
     .services .service {
         width: 45%;
+    }
+}
+@media (max-width: 1207px) {
+    footer > *{
+        max-width: 45%;
+    }
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
     }
 }
 @media (max-width: 1200px) {
@@ -746,6 +798,18 @@ footer svg {
         background-image: linear-gradient(to bottom right, var(--secondary) 50%, transparent 0);
     }
 }
+@media (max-width: 1099px) {
+    .footer-desc {
+        align-self: center !important;
+        text-align: center;
+    }
+    footer {
+        justify-content: center !important;
+    } 
+    footer > *:not(.footer-desc) {
+        display: none;
+    }
+}
 @media (max-width: 1095px) {
     .hero-text h1 {
         font-size: 40px;
@@ -801,10 +865,15 @@ footer svg {
         display: none;
     }
     .blog-card {
-        width: 350px;
+        width: 30%;
     }
     .blog-cards {
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 1007px) { 
+    .blog-card {
+        width: 350px;
     }
 }
 @media (max-width: 992px) {
